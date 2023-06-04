@@ -1,5 +1,11 @@
-﻿namespace UsuariosApi.Models;
+﻿using Microsoft.AspNetCore.Identity;
 
-public class Usuario
+namespace UsuariosApi.Models;
+
+public class Usuario : IdentityUser
 {
+    public DateTime DataNascimento { get; set; }
+    public Usuario() : base()
+    { 
+    }
 }
