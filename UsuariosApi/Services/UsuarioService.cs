@@ -10,12 +10,14 @@ public class UsuarioService
     private IMapper _mapper;
     private UserManager<Usuario> _userManager;
     private SignInManager<Usuario> _signInManager;
+    private TokenService _tokenService;
 
-    public UsuarioService(UserManager<Usuario> userManager, IMapper mapper, SignInManager<Usuario> signInManager)
+    public UsuarioService(UserManager<Usuario> userManager, IMapper mapper, SignInManager<Usuario> signInManager, TokenService tokenService)
     {
         _userManager = userManager;
         _mapper = mapper;
         _signInManager = signInManager;
+        _tokenService = tokenService;
     }
 
     // Metodo assincrono, pois se trata de uma operacao que pode ou não retornar um valor.
@@ -40,5 +42,6 @@ public class UsuarioService
         {
             throw new ApplicationException("Usuário não autenticado!");
         }
+        _tokenService.GenereteToken(usuario);
     }
 }
