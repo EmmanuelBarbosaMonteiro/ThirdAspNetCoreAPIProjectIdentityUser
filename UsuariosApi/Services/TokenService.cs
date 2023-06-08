@@ -6,22 +6,22 @@ using UsuariosApi.Models;
 
 namespace UsuariosApi.Services;
 
-internal class TokenService
+public class TokenService
 {
-    public void GenereteToken(Usuario usuario)
+    public string GenerateToken(Usuario usuario)
     {
         Claim[] claims = new Claim[]
         {
             new Claim("username", usuario.UserName),
             new Claim("id", usuario.Id),
-            new Claim(ClaimTypes.DateOfBirth, usuario.DataNascimento.ToString())
+            new Claim(ClaimTypes.DateOfBirth, usuario.DataNascimento.ToString()),
+            new Claim("loginTimestamp", DateTime.UtcNow.ToString())
         };
 
-        var chave = new SymmetricSecurityKey
-            (Encoding.UTF8.GetBytes("9547SDDGH9542267fgdshu647"));
+        var chave = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("9ASHDA98H9ah9ha9H9A89n0f01234567"));
 
-        var signingCredentials = new SigningCredentials
-            (chave, SecurityAlgorithms.HmacSha256);
+        var signingCredentials =
+            new SigningCredentials(chave, SecurityAlgorithms.HmacSha256);
 
         var token = new JwtSecurityToken
             (
@@ -29,5 +29,7 @@ internal class TokenService
             claims: claims,
             signingCredentials: signingCredentials
             );
+
+        return new JwtSecurityTokenHandler().WriteToken(token);
     }
 }

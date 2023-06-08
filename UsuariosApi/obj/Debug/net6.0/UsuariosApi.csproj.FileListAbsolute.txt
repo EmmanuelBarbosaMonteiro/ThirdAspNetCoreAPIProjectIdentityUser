@@ -41,3 +41,8 @@ C:\Projeto Cs\UsuariosApi\UsuariosApi\obj\Debug\net6.0\refint\UsuariosApi.dll
 C:\Projeto Cs\UsuariosApi\UsuariosApi\obj\Debug\net6.0\UsuariosApi.pdb
 C:\Projeto Cs\UsuariosApi\UsuariosApi\obj\Debug\net6.0\UsuariosApi.genruntimeconfig.cache
 C:\Projeto Cs\UsuariosApi\UsuariosApi\obj\Debug\net6.0\ref\UsuariosApi.dll
+C:\Projeto Cs\UsuariosApi\UsuariosApi\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Projeto Cs\UsuariosApi\UsuariosApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Projeto Cs\UsuariosApi\UsuariosApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Projeto Cs\UsuariosApi\UsuariosApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Projeto Cs\UsuariosApi\UsuariosApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
