@@ -14,12 +14,15 @@ Este é um projeto de API RESTful que permite o gerenciamento de usuários. É c
 - Login: Permite que os usuários façam login e recebam um token de autenticação.
 - Verificação de idade: A API verifica a idade dos usuários antes de permitir o acesso a determinados endpoints.
 
-**How to Run / Como Executar**
+**How to Run**
 
 1. Clone this repository to your local machine.
 2. Open the project in Visual Studio.
 3. Configure the connection string in appsettings.json to point to your database server.
 4. Run the application.
+
+**Como Executar**
+
 1. Clone este repositório para a sua máquina local.
 2. Abra o projeto no Visual Studio.
 3. Configure a string de conexão no appsettings.json para apontar para o seu servidor de banco de dados.
