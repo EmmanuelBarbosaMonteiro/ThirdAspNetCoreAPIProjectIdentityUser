@@ -20,10 +20,10 @@ Este é um projeto de API RESTful que permite o gerenciamento de usuários. É c
 2. Open the project in Visual Studio.
 3. Configure the connection string in appsettings.json to point to your database server.
 4. Run the application.
-5. Clone este repositório para a sua máquina local.
-6. Abra o projeto no Visual Studio.
-7. Configure a string de conexão no appsettings.json para apontar para o seu servidor de banco de dados.
-8. Execute a aplicação.
+1. Clone este repositório para a sua máquina local.
+2. Abra o projeto no Visual Studio.
+3. Configure a string de conexão no appsettings.json para apontar para o seu servidor de banco de dados.
+4. Execute a aplicação.
 
 **Technologies Used / Tecnologias Utilizadas**
 
